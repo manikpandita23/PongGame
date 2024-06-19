@@ -30,3 +30,5 @@ hit_ball.goto(0, 0)
 hit_ball.dx = 5
 hit_ball.dy = -5
 
+left_player = 0
+right_player = 0
