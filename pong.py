@@ -32,3 +32,11 @@ hit_ball.dy = -5
 
 left_player = 0
 right_player = 0
+
+sketch = turtle.Turtle()
+sketch.speed(0)
+sketch.color("blue")
+sketch.penup()
+sketch.hideturtle()
+sketch.goto(0, 260)
+sketch.write("Left_player : 0    Right_player: 0", align="center", font=("Courier", 24, "normal"))
