@@ -60,3 +60,16 @@ def paddlebdown():
     y = right_pad.ycor()
     y -= 20
     right_pad.sety(y)
+
+
+sc.listen()
+sc.onkey(paddleaup, "w")
+sc.onkey(paddleadown, "s")
+sc.onkey(paddlebup, "Up")
+sc.onkey(paddlebdown, "Down")
+
+while True:
+    sc.update()
+
+    hit_ball.setx(hit_ball.xcor()+hit_ball.dx)
+    hit_ball.sety(hit_ball.ycor()+hit_ball.dy)
